@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    <img src="docs/img.png" alt="Example" style="width: 300px; height: 300px;">
+    <img src="docs/img.png" alt="Example" style="width: 600px; height: 315px;">
     <br>
     Golang + SQLite + VueJs from the one binary!
     <br>
