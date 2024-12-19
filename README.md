@@ -1,24 +1,26 @@
 <h1 align="center">
     <br>
-    <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*ovJrUZn9l-SXfEAWDpt2qQ.png"
-         alt="Go JWT" width="200">
+    ![Example](docs/example.png)
     <br>
-    Golang JWT Auth Boilerplate
+    Golang + SQLite + VueJs from the one binary!
     <br>
 </h1>
 
-<h4 align="center">Golang boilerplate project to have a quick setup of server with JWT Authentication</h4>
+<h4 align="center">Golang boilerplate project to have a quick setup of server with JWT Authentication and usage of
+    SQLlite with ready to use frontend. FE app starts from the same binary.</h4>
 
 <p align="center">
     <a href="#key-features">Key Features</a> •
-    <a href="#how-to-use">How To Use</a> •
+    <a href="#how-to-use">How to use?</a> •
+    <a href="#how-to-auth">How Authorisation works?</a> •
     <a href="#api">Api</a> •
     <a href="#license">License</a>
 </p>
 
 ## Key Features
 
-* DB instance prepared - easy to create needed structures with goose library.
+* SQLite DB instance prepared - easy to create needed structures with goose library.
+* VueJS simple app ready to use - starts from the same binary.
 * Logs of information from the request/response.
 * PII - simple example to parse body in logger middleware and hide personal ident. information (password).
 * Fiber framework - fast golang web library.
@@ -27,9 +29,18 @@
 * OAuth2.0 - authenticate user and get access & refresh tokens by 3rd parties (as an example with Google)
 * Refresh - refresh tokens.
 * Easy-to-test - project structured in a way to make it simple and easy to mock everything and test.
-* Docker-Compose for DB
 
-How it works?
+## How To Use
+
+Just build and run! And get ready lightweight FE+BE+DB!
+
+```sh
+make build
+
+./golite
+```
+
+## How Authorisation works?
 
 JWT auth with login and password
 ```
@@ -71,8 +82,6 @@ Login with OAuth 2.0 (Google example)
 |       |<-(8)-- Generated JWT Tokens ---|        |                               |      |
 +-------+                                +--------+                               +------+
 ```
-
-## How To Use
 
 Environment variables
 ```
