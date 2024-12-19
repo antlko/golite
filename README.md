@@ -1,6 +1,6 @@
 <h1 align="center">
     <br>
-    ![Example](docs/example.png)
+    ![Example](docs/img.png)
     <br>
     Golang + SQLite + VueJs from the one binary!
     <br>
