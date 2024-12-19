@@ -86,16 +86,16 @@ Login with OAuth 2.0 (Google example)
 Environment variables
 ```
 # App configs
+# App configs
 APPLICATION_NAME=my_app
 SERVER_PORT=4000
 
 # DB configs
-DB_HOST=localhost
-DB_PORT=5432
-DB_USER=user
-DB_PASSWORD=password
-DB_NAME=postgres
-DB_SCHEMA=goauth
+DB_FOLDER=
+DB_NAME=golite
+DB_MAX_IDLE_CONNS=50
+DB_MAX_OPEN_CONNS=120
+DB_LOG_LEVEL=error
 
 # JWT configs
 JWT_SECRET_KEY=test
@@ -106,6 +106,12 @@ JWT_REFRESH_TOKEN_HOURS=24
 GOOGLE_CLIENT_ID=client_id
 GOOGLE_CLIENT_SECRET=client_secret
 GOOGLE_CALLBACK_URL=http://localhost:4000/api/v1/oauth2/google/callback
+
+#Client API
+CLIENT_OAUTH2_CALLBACK_URL=http://localhost:5173/api/v1/oauth2/callback
+
+# UI
+VITE_SERVER_HOST=http://localhost:4000
 ```
 
 ```bash
