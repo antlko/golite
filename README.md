@@ -40,6 +40,10 @@ make build
 ./golite
 ```
 
+Go the the `http://localhost:5173/`
+There you can create user, login
+<img src="docs/img_1.png" alt="screen" style="width: 796px; height: 656px;">
+
 ## How Authorisation works?
 
 JWT auth with login and password

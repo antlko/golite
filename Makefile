@@ -8,5 +8,8 @@ build-web: install
 build: build-web
 	go build .
 
+build-and-run: build
+	./golite
+
 run-web:
 	npm run dev --prefix ./ui
