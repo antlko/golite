@@ -10,7 +10,6 @@ import (
 	"io/fs"
 	"log/slog"
 	"net/http"
-	"os"
 	"strings"
 )
 
@@ -44,8 +43,6 @@ func main() {
 
 // startUI serves the Vue.js app
 func startUI(cfg internal.AppConfig) {
-	os.Setenv("VITE_SERVER_HOST", cfg.Ui.ServerPort)
-
 	// Prepare the embedded Vue app files
 	dist, err := fs.Sub(app, "ui/dist")
 	if err != nil {
