@@ -41,7 +41,7 @@ make build
 ```
 
 Go the the `http://localhost:5173/`
-There you can create user, login
+There you can create user and login.
 
 <br>
 <img src="docs/img_1.png" alt="screen" style="width: 796px; height: 656px;">
