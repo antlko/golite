@@ -2,7 +2,7 @@
     <br>
     <img src="docs/img.png" alt="Example" style="width: 600px; height: 315px;">
     <br>
-    Golang + SQLite + VueJs from the one binary!
+    Golang ONE binary FE + BE + Database!
     <br>
 </h1>
 
