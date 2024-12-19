@@ -101,7 +101,7 @@ GOOGLE_CALLBACK_URL=http://localhost:4000/api/v1/oauth2/google/callback
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/antlko/goauth-boilerplate.git
+$ git clone https://github.com/antlko/golite.git
 
 # Go into the repository
 $ cd goauth-boilerplate

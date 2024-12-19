@@ -1,7 +1,7 @@
 package middlewares
 
 import (
-	"github.com/antlko/goauth-boilerplate/internal/server/responses"
+	"github.com/antlko/golite/internal/server/responses"
 	"github.com/gofiber/fiber/v3"
 	"net/http"
 )

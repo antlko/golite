@@ -2,10 +2,10 @@
 -- +goose StatementBegin
 CREATE TABLE users
 (
-    id       bigserial primary key,
-    login    text not null,
-    email    text not null,
-    password text not null,
+    id       INTEGER PRIMARY KEY AUTOINCREMENT,
+    login    TEXT NOT NULL,
+    email    TEXT NOT NULL,
+    password TEXT NOT NULL,
 
     UNIQUE (login, email)
 );
@@ -13,5 +13,5 @@ CREATE TABLE users
 
 -- +goose Down
 -- +goose StatementBegin
-DROP TABLE users;
+DROP TABLE IF EXISTS users;
 -- +goose StatementEnd

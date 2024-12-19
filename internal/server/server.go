@@ -2,10 +2,10 @@ package server
 
 import (
 	"fmt"
-	"github.com/antlko/goauth-boilerplate/internal/db"
-	"github.com/antlko/goauth-boilerplate/internal/jwt"
-	"github.com/antlko/goauth-boilerplate/internal/server/handlers"
-	"github.com/antlko/goauth-boilerplate/internal/server/middlewares"
+	"github.com/antlko/golite/internal/db"
+	"github.com/antlko/golite/internal/jwt"
+	"github.com/antlko/golite/internal/server/handlers"
+	"github.com/antlko/golite/internal/server/middlewares"
 	"github.com/gofiber/fiber/v3"
 	"github.com/gofiber/fiber/v3/middleware/cors"
 	"github.com/jmoiron/sqlx"

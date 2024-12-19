@@ -1,0 +1,22 @@
+{
+  "name": "vue-auth",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@primevue/themes": "^4.0.4",
+    "axios": "^1.7.3",
+    "primevue": "^4.0.4",
+    "vue": "^3.4.29",
+    "vue-router": "^4.4.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.1"
+  }
+}

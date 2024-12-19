@@ -8,8 +8,8 @@ import (
 
 type Config struct {
 	JwtSecretKey         string `env:"JWT_SECRET_KEY"`
-	JwtAccessTokenHours  int64  `env:"JWT_ACCESS_TOKEN_HOURS"  envDefault:"24"`
-	JwtRefreshTokenHours int64  `env:"JWT_REFRESH_TOKEN_HOURS" envDefault:"168"`
+	JwtAccessTokenHours  int64  `env:"JWT_ACCESS_TOKEN_HOURS,default=24"`
+	JwtRefreshTokenHours int64  `env:"JWT_REFRESH_TOKEN_HOURS,default=168"`
 }
 
 type Tokens struct {
