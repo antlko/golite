@@ -35,7 +35,9 @@
 Just build and run! And get ready lightweight FE+BE+DB!
 
 ```sh
-make build-and-run
+make build
+
+./golite
 ```
 
 Go the the `http://localhost:5173/`
