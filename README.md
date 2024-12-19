@@ -126,16 +126,13 @@ VITE_SERVER_HOST=http://localhost:4000
 $ git clone https://github.com/antlko/golite.git
 
 # Go into the repository
-$ cd goauth-boilerplate
+$ cd golite
 
 # Copy default envs and change .env as you want
 $ cp .env.dist .env
 
-# Deploy postgres container on demand
-$ docker-compose up -d
-
 # Run the app
-$ go run main.go
+$ make build-and-run
 ```
 
 ## Api
