@@ -1,5 +1,6 @@
-![Example](docs/img.png)
 <h1 align="center">
+    <br>
+    <img src="docs/img.png" alt="Example" style="width: 300px; height: 300px;">
     <br>
     Golang + SQLite + VueJs from the one binary!
     <br>
