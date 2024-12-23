@@ -10,6 +10,7 @@ import (
 	"io/fs"
 	"log/slog"
 	"net/http"
+	"os"
 	"strings"
 )
 
@@ -30,9 +31,11 @@ func main() {
 	}
 
 	// Start the UI server in a separate goroutine
-	go func() {
-		startUI(cfg)
-	}()
+	if len(os.Args) <= 1 {
+		go func() {
+			startUI(cfg)
+		}()
+	}
 
 	// Initialize the backend service
 	if err := internal.InitService(cfg); err != nil {
